@@ -9,7 +9,7 @@ import generateRandomNumber from '../utils/random';
 import choices from './../configs/choices';
 
 function PlayScreen() {
-	const [yourChoice, setYourChoice] = useState(choices[0].name);
+	const [yourChoice, setYourChoice] = useState('');
 	const [opponentChoice, setOpponentChoice] = useState(
 		choices[generateRandomNumber(choices.length)].name
 	);
